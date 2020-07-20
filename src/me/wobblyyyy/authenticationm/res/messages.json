@@ -1,0 +1,22 @@
+{
+  ".version": "1",
+  "prefix": "&cAuthentication &f| &7",
+  "welcome": "Welcome! Please remember to authenticate yourself with your password.",
+  "tooManyArgs": "Too many arguments supplied!",
+  "tooFewArgs": "Too few arguments supplied!",
+  "invalidArg": "Invalid argument!",
+  "loginSucceeded": "You've successfully logged in.",
+  "autoLogin": "You've been automatically logged in.",
+  "loginFailed": "Failed to authenticate your account.",
+  "badPassword": "Incorrect password.",
+  "passwordChanged": "You've successfully changed your password.",
+  "accountCreated": "You've successfully created an account.",
+  "authFormat": "Format: /auth <password>",
+  "loggedOut": "You've been logged out.",
+  "whitelistOn": "The whitelist has been enabled.",
+  "whitelistOff": "The whitelist has been disabled.",
+  "whitelistAdd": "You've added that player to the whitelist.",
+  "whitelistRemove": "You've removed that player from the whitelist.",
+  "passwordTooShort": "Your password is too short!",
+  "passwordTooLong": "Your password is too long!"
+}

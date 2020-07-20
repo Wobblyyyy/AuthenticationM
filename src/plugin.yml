@@ -1,0 +1,18 @@
+name: 'AuthenticationM'
+version: '1.0.0'
+description: 'Authentication manager plugin.'
+api-version: '1.15'
+main: me.wobblyyyy.authenticationm.src.AuthenticationM
+commands:
+  auth:
+    description: Main authentication command.
+  logout:
+    description: Log out of your account.
+    aliases: [signout, log_out, authlogout, authsignout]
+  deleteaccount:
+    description: Entirely remove your account.
+    aliases: [remaccount, delaccout, remacc, delacc, delete]
+  whitelist:
+    description: Whitelist command.
+    aliases: [wl, wlist]
+    permission: authenticationm.whitelist

@@ -1,0 +1,19 @@
+{
+  ".version": "1",
+  "whitelistIsEnabled": "false",
+  "whitelistIsBlacklist": "false",
+  "autoSaveData": "true",
+  "automaticallyCheckForUpdates": "true",
+  "useCustomMessages": "true",
+  "enableAutoLogin": "true",
+  "restrictChat": "true",
+  "restrictMovement": "true",
+  "restrictInteractions": "true",
+  "kickPlayersWhoDontAuthenticate": "true",
+  "kickDelay": "30",
+  "minPasswordLength": "5",
+  "maxPasswordLength": "1000",
+  ".saltRounds": "WARNING: having salt rounds too high (> 12) might crash your server",
+  "saltRounds": "5",
+  "welcomeOnJoin": "true"
+}
