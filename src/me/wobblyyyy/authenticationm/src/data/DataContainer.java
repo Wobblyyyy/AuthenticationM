@@ -41,9 +41,9 @@ public class DataContainer implements Serializable {
     /**
      * A list of whitelisted or blacklisted players.
      * <p>
-     *     Depending on isWhitelistActive, this can either be a whitelist or
-     *     a blacklist. In most cases, this will be a whitelist - who the
-     *     fuck would want to use a blacklist - but anyway, yeah.
+     * Depending on isWhitelistActive, this can either be a whitelist or
+     * a blacklist. In most cases, this will be a whitelist - who the
+     * fuck would want to use a blacklist - but anyway, yeah.
      * </p>
      */
     public ArrayList<String> whitelist = new ArrayList<>();
@@ -51,8 +51,8 @@ public class DataContainer implements Serializable {
     /**
      * A list of players who have already been authenticated.
      * <p>
-     *     We don't actually need this to be saved and loaded whenever the
-     *     plugin is enabled or disabled - move this to another file?
+     * We don't actually need this to be saved and loaded whenever the
+     * plugin is enabled or disabled - move this to another file?
      * </p>
      */
     public ArrayList<String> authenticated = new ArrayList<>();

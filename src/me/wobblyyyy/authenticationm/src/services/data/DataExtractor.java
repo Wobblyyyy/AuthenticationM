@@ -17,14 +17,14 @@ public class DataExtractor {
     public void copyDefaultFiles() {
         String df = plugin.getDataFolder().getAbsolutePath() + File.separator;
         HashMap<String, File> data = new HashMap<>() {{
-           put(
-                   "/me/wobblyyyy/authenticationm/res/messages.json",
-                   new File(df + "messages.json")
-           );
-           put(
-                   "/me/wobblyyyy/authenticationm/res/config.json",
-                   new File(df + "config.json")
-           );
+            put(
+                    "/me/wobblyyyy/authenticationm/res/messages.json",
+                    new File(df + "messages.json")
+            );
+            put(
+                    "/me/wobblyyyy/authenticationm/res/config.json",
+                    new File(df + "config.json")
+            );
         }};
         for (HashMap.Entry<String, File> entry : data.entrySet()) {
             String s = entry.getKey();

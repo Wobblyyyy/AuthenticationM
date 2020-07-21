@@ -10,6 +10,7 @@ public class Password implements Serializable {
 
     /**
      * Constructor with password.
+     *
      * @param password the password to use
      */
     public Password(String password) {
@@ -19,8 +20,9 @@ public class Password implements Serializable {
     /**
      * Gets the password.
      * <p>
-     *     Note that the value this returns has already been hashed.
+     * Note that the value this returns has already been hashed.
      * </p>
+     *
      * @return
      */
     public String getPassword() {
@@ -30,8 +32,9 @@ public class Password implements Serializable {
     /**
      * Sets the password.
      * <p>
-     *     Make sure to use BCrypt to encrypt the password!
+     * Make sure to use BCrypt to encrypt the password!
      * </p>
+     *
      * @param password the string password to encrypt and set
      */
     public void setPassword(String password) {
@@ -51,6 +54,7 @@ public class Password implements Serializable {
     /**
      * Use BCrypt's checkpw function to check whether or not the same
      * password is being used.
+     *
      * @param password password to try
      * @return whether or not the passwords match
      */

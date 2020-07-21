@@ -151,9 +151,10 @@ public class AuthenticationHandler {
     /**
      * Check whether or not the password is actually the right length.
      * <p>
-     *     Might be issues when using whirlpool hashing? Make sure to try to
-     *     get around that somehow.
+     * Might be issues when using whirlpool hashing? Make sure to try to
+     * get around that somehow.
      * </p>
+     *
      * @param account the account with a password to check the length of.
      * @return whether or not the password is the correct length
      */
@@ -178,16 +179,17 @@ public class AuthenticationHandler {
     /**
      * Try to see if the authentication would work out.
      * <p>
-     *     We use an account to try to log in. If the two accounts match, we
-     *     know we can log in. And if we know we can log in, we actually go
-     *     ahead and log in.
+     * We use an account to try to log in. If the two accounts match, we
+     * know we can log in. And if we know we can log in, we actually go
+     * ahead and log in.
      * </p>
      * <p>
-     *     We want to make sure to remove the player from the lock-down list,
-     *     assuming their authentication works. For some reason, this is
-     *     bugged, and I'm going to have to take a look at that. Oh well.
-     *     Can't wait.
+     * We want to make sure to remove the player from the lock-down list,
+     * assuming their authentication works. For some reason, this is
+     * bugged, and I'm going to have to take a look at that. Oh well.
+     * Can't wait.
      * </p>
+     *
      * @param account the account to try
      * @return whether or not the authentication worked
      */

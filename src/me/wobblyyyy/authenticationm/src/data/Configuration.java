@@ -33,8 +33,8 @@ public class Configuration {
     /**
      * Should we use custom messages or the default ones?
      * <p>
-     *     If this is set to false, we don't load messages with the
-     *     MessagesLoader thingy. That's all! Yay!
+     * If this is set to false, we don't load messages with the
+     * MessagesLoader thingy. That's all! Yay!
      * </p>
      */
     public static boolean useCustomMessages = true;
@@ -88,8 +88,8 @@ public class Configuration {
     /**
      * How many rounds of salting we should go through (adjusts security)
      * <p>
-     *     WARNING: don't make this too high! < 12 might crash your server or
-     *     something
+     * WARNING: don't make this too high! < 12 might crash your server or
+     * something
      * </p>
      */
     public static int saltRounds = 5;
@@ -101,6 +101,7 @@ public class Configuration {
 
     /**
      * Get boolean from string.
+     *
      * @param e the string to get a boolean from
      * @return whether or not the returned value is "true"
      */
@@ -110,6 +111,7 @@ public class Configuration {
 
     /**
      * Get an integer from string.
+     *
      * @param e the string to get an integer from
      * @return the integer
      */
@@ -125,6 +127,7 @@ public class Configuration {
     /**
      * Get data from a configuration map loaded from a file and do magical
      * things with it.
+     *
      * @param map hash-map to use
      */
     public static void loadConfiguration(HashMap<String, String> map) {
