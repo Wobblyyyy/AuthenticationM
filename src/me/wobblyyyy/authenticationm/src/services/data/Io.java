@@ -72,7 +72,7 @@ public class Io {
             objectInputStream.close();
             fileInputStream.close();
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return data;
     }

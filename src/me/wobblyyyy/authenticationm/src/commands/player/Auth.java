@@ -29,6 +29,10 @@ public class Auth implements CommandExecutor {
                     account,
                     Messages.buildTooManyArgs()
             );
+            PlayerServiceManager.sendPlayerMessage(
+                    account,
+                    Messages.buildAuthFormat()
+            );
         } else if (args.length == 1) {
             String password = args[0];
             account.password.setPassword(password);

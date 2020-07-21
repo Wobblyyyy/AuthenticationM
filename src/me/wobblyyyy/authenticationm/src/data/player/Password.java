@@ -1,7 +1,5 @@
 package me.wobblyyyy.authenticationm.src.data.player;
 
-import org.mindrot.jbcrypt.BCrypt;
-
 import java.io.Serializable;
 
 public class Password implements Serializable {
@@ -37,10 +35,17 @@ public class Password implements Serializable {
      * @param password the string password to encrypt and set
      */
     public void setPassword(String password) {
-        this.password = BCrypt.hashpw(
-                password,
-                BCrypt.gensalt()
-        );
+//        this.password = BCrypt.hashpw(
+//                password,
+//                BCrypt.gensalt(Configuration.saltRounds)
+//        );
+        /*
+         * TODO
+         *  I removed BCrypt because for some reason I'm having issues with
+         *  hashing passwords. It's important that we re-add this feature
+         *  before major public releases so this plugin maintains security.
+         */
+        this.password = password;
     }
 
     /**
@@ -50,11 +55,16 @@ public class Password implements Serializable {
      * @return whether or not the passwords match
      */
     public boolean isSamePassword(Password password) {
-        System.out.println("attempt: " + password.getPassword());
-        System.out.println("stored: " + this.password);
-        return BCrypt.checkpw(
-                password.getPassword(),
-                this.password
-        );
+        return this.password.equals(password.getPassword());
+        /*
+         * TODO
+         *  I removed BCrypt because for some reason I'm having issues with
+         *  hashing passwords. It's important that we re-add this feature
+         *  before major public releases so this plugin maintains security.
+         */
+//        return BCrypt.checkpw(
+//                password.getPassword(),
+//                this.password
+//        );
     }
 }

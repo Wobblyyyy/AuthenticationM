@@ -107,7 +107,16 @@ public class PlayerServiceManager {
         if (state) {
             data.lockdown.add(username);
         } else {
-            data.lockdown.remove(username);
+            AuthenticationM.tasks.scheduleTask(
+                    // We're having issues with removing players from
+                    // lockdown for some reason - for now, using Bukkit's
+                    // scheduling system to schedule the task to run a little
+                    // bit later should help, but this is an issue we
+                    // definitely have to correct at some point in the
+                    // (hopefully) very near future.
+                    () -> data.lockdown.remove(username),
+                    10 // 10 ticks = 0.5 seconds
+            );
         }
     }
 
