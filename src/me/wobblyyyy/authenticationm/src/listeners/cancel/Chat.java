@@ -1,5 +1,6 @@
 package me.wobblyyyy.authenticationm.src.listeners.cancel;
 
+import me.wobblyyyy.authenticationm.src.data.Configuration;
 import me.wobblyyyy.authenticationm.src.listeners.Shared;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 public class Chat implements Listener {
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
+        if (!Configuration.restrictChat) return;
         if (Shared.isPlayerOnLockdown(event.getPlayer())) {
             event.setCancelled(true);
         }
@@ -19,6 +21,7 @@ public class Chat implements Listener {
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onPlayerCommand(PlayerCommandPreprocessEvent event) {
+        if (!Configuration.restrictCommands) return;
         if (Shared.isPlayerOnLockdown(event.getPlayer())) {
             ArrayList<String> allowedCommands = new ArrayList<>() {{
                 add("authenticate");

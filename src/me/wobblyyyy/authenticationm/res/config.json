@@ -7,6 +7,7 @@
   "useCustomMessages": "true",
   "enableAutoLogin": "true",
   "restrictChat": "true",
+  "restrictCommands": "true",
   "restrictMovement": "true",
   "restrictInteractions": "true",
   "kickPlayersWhoDontAuthenticate": "true",

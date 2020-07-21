@@ -51,6 +51,11 @@ public class Configuration {
     public static boolean restrictChat = true;
 
     /**
+     * Should we restrict commands?
+     */
+    public static boolean restrictCommands = true;
+
+    /**
      * Should we restrict the user from using commands?
      */
     public static boolean restrictMovement = true;
@@ -132,6 +137,7 @@ public class Configuration {
         useCustomMessages = booleanFromString(map.get("useCustomMessages"));
         enableAutoLogin = booleanFromString(map.get("enableAutoLogin"));
         restrictChat = booleanFromString(map.get("restrictChat"));
+        restrictCommands = booleanFromString(map.get("restrictCommands"));
         restrictMovement = booleanFromString(map.get("restrictMovement"));
         restrictInteractions = booleanFromString(map.get(
                 "restrictInteractions"));
