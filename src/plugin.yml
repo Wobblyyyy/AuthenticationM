@@ -6,12 +6,13 @@ main: me.wobblyyyy.authenticationm.src.AuthenticationM
 commands:
   auth:
     description: Main authentication command.
+    aliases: [authenticate, authentication, a, l]
   logout:
     description: Log out of your account.
-    aliases: [signout, log_out, authlogout, authsignout]
+    aliases: [signout, log_out, authlogout, authsignout, lo]
   deleteaccount:
     description: Entirely remove your account.
-    aliases: [remaccount, delaccout, remacc, delacc, delete]
+    aliases: [remaccount, delaccout, remacc, delacc, delete, da]
   whitelist:
     description: Whitelist command.
     aliases: [wl, wlist]
