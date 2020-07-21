@@ -21,6 +21,8 @@ public class Chat implements Listener {
     public void onPlayerCommand(PlayerCommandPreprocessEvent event) {
         if (Shared.isPlayerOnLockdown(event.getPlayer())) {
             ArrayList<String> allowedCommands = new ArrayList<>() {{
+                add("authenticate");
+                add("l");
                 add("auth");
                 add("logout");
                 add("signout");
