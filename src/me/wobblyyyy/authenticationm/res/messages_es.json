@@ -1,0 +1,22 @@
+{
+  ".version": "1",
+  "prefix": "&cAutenticación &f| &7",
+  "welcome": "¡Hola! Recuerde iniciar sesión con su contraseña.",
+  "tooManyArgs": "Hay demasiados parámetros suministrados suficientes.",
+  "tooFewArgs": "No hay suficientes parámetros suministrados.",
+  "invalidArg": "¡Parametro invalido!",
+  "loginSucceeded": "Usted ha ingresado.",
+  "autoLogin": "Estás conectado automáticamente.",
+  "loginFailed": "No pudo firmar en.",
+  "badPassword": "Contraseña incorrecta.",
+  "passwordChanged": "Cambiaste tu contraseña.",
+  "accountCreated": "Has creado tu cuenta.",
+  "authFormat": "Formato: /auth <contraseña>",
+  "loggedOut": "Dejaste tu cuenta.",
+  "whitelistOn": "La lista blanca ha sido activada.",
+  "whitelistOff": "La lista blanca ha sido desactivada.",
+  "whitelistAdd": "Agregaste ese jugador a la lista blanca.",
+  "whitelistRemove": "Eliminaste a ese jugador de la lista blanca.",
+  "passwordTooShort": "Su contraseña es demasiado corta.",
+  "passwordTooLong": "Tu contraseña es muy larga."
+}
